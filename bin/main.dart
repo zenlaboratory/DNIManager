@@ -13,7 +13,7 @@ void main(List<String> arguments) {
 
   do {
 
-    stdout.write('Introduce tu número de DNI (0/EXIT): ');
+    stdout.write('Introduce tu número de DNI sin letra (0=EXIT): ');
     dni = stdin.readLineSync();
     modulo = int.parse(dni)%23;
     dniConLetra = dni + letrasDni[modulo];
