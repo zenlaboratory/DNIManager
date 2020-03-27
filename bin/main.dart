@@ -11,28 +11,23 @@ void main(List<String> arguments) {
 
   do {
 
-    stdout.write('Introduce tu número de DNI (X/EXIT): ');
+    stdout.write('Introduce tu número de DNI (0/EXIT): ');
     dni = stdin.readLineSync();
-    print(dni);
-    print(dniConLetra);
+    modulo = int.parse(dni)%23;
+    dniConLetra = dni + letrasDni[modulo];
 
-    if ((dni != 'X') && (!personas.containsKey(dniConLetra))) {
+    if ((dni != '0') && (!personas.containsKey(dniConLetra))) {
 
-      modulo = int.parse(dni)%23;
-      dni = dni + letrasDni[modulo];
       stdout.write('Introduce tu nombre: ');
       nombre = stdin.readLineSync();
-      personas[dni] = {nombre};
-      dniConLetra = dni;
-      print(dniConLetra);
+      personas[dniConLetra] = {nombre};
 
       }
 
-      else if (dni != 'X' && personas.containsKey(dniConLetra)) { 
+      else if ((dni != '0') && (personas.containsKey(dniConLetra))) { 
       
         print('DNI ya registrado introduzca un DNI valido... \n');
-        dniConLetra = '';
-      
+
       }
 
       else {
@@ -41,7 +36,7 @@ void main(List<String> arguments) {
       
       }
     
-  } while (dni != 'X');
+  } while (dni != '0');
 
   print (personas);
 
