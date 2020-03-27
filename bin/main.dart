@@ -26,18 +26,18 @@ void main(List<String> arguments) {
       dniConLetra = dni;
       print(dniConLetra);
 
-    }
+      }
 
       else if (dni != 'X' && personas.containsKey(dniConLetra)) { 
       
-      print('DNI ya registrado introduzca un DNI valido... \n');
-      dniConLetra = '';
+        print('DNI ya registrado introduzca un DNI valido... \n');
+        dniConLetra = '';
       
       }
 
       else {
 
-      break; 
+        break; 
       
       }
     
