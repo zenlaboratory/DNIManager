@@ -1,3 +1,5 @@
+// Programa para calcular la letra del DNI y almacenar los datos DNI/Nombre en una variable tipo Map().
+
 import 'dart:io';
 
 var personas = {};
