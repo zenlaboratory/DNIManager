@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"debug.node.autoAttach": "on",
+		"dart.previewFlutterUiGuidesCustomTracking": true,
+		"search.collapseResults": "alwaysExpand"
+	}
+}
