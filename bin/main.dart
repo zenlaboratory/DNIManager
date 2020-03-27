@@ -7,7 +7,7 @@ var dni = '';
 var dniConLetra = '';
 var nombre = '';
 var modulo = 0;
-var letrasDni = ['T', 'R', 'W', 'A', 'G', 'M', 'Y',	'F', 'P', 'D',	'X',	'B',	'N',	'J',	'Z',	'S',	'Q',	'V',	'H',	'L', 'C','K', 'E'];
+var letrasDni = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
 
 void main(List<String> arguments) {
 
