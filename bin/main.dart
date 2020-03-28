@@ -45,7 +45,7 @@ void main(List<String> arguments) {
 
         // En este caso el DNI ya se encuentra registrado en el sistema.
       
-        print('DNI ya registrado introduzca un DNI valido... \n');
+        print('\n DNI ya registrado introduzca un DNI valido... \n');
 
       }
 
