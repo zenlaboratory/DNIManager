@@ -1,5 +1,5 @@
 // Programa para calcular la letra del DNI y almacenar los datos DNI/Nombre en una variable tipo Map().
-// No se chequean los errores de introducción de datos.
+// NOTA: No se chequean los errores de introducción de datos.
 
 // Importación de las librerias necesarias pra el programa, dart:io para posibilitar la entrada y salida de datos por consola.
 
@@ -27,7 +27,7 @@ void main(List<String> arguments) {
     modulo = int.parse(dni)%23;
     dniConLetra = dni + letrasDni[modulo];
 
-    // Comprobamos la opción introducida por el ususario y verificamos que no es el valor 0 para salir del programa y que el DNI no está repetido.
+    // Comprobamos la opción introducida por el ususario y verificamos que no es el valor 0 para salir del programa y que el DNI no está registrado.
 
     if ((dni != '0') && (!personas.containsKey(dniConLetra))) {
 
@@ -51,7 +51,7 @@ void main(List<String> arguments) {
 
       else {
 
-        // Salida de la condicional al introducir el valor 0.
+        // Salida de la condicional al introducir el valor 0, el usuario ha seleccionado salir del programa.
 
         break; 
       
