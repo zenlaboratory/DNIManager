@@ -7,6 +7,17 @@
   "configurations": [
     {
       "type": "gdb",
+      "request": "attach",
+      "executable": "/usr/bin/gdb",
+      "name": "Attach to PID",
+      "target": "8272",
+      "cwd": "${workspaceRoot}",
+      "valuesFormatting": "parseText",
+      "terminal": ""
+    },
+
+    {
+      "type": "gdb",
       "request": "launch",
       "name": "Launch Program",
       "target": "/usr/bin/gdb",
