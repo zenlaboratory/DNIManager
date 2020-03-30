@@ -35,7 +35,7 @@ void main(List<String> arguments) {
 
       stdout.write('Introduce tu nombre: ');
       nombre = stdin.readLineSync();
-      personas[dniConLetra] = {nombre};
+      personas[dniConLetra] = nombre;
 
       }
 
@@ -60,7 +60,8 @@ void main(List<String> arguments) {
   } while (dni != '0');
 
   // Impresión del Map() con los datos introducidos.
-
-  print (personas);
+  print('\nLISTADO DE PERSONAS REGISTRADAS');
+  print('=============================== \n');
+  personas.forEach((dniConLetra, nombre) => print('$dniConLetra \t $nombre'));
 
 }
